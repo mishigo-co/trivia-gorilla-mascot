@@ -1,5 +1,7 @@
 # Trivia Gorilla Mascot
 
+**Published Storybook:** https://main--6a634cc8ff3bfdfb7c06b4e3.chromatic.com/
+
 A small React + Storybook project for demonstrating [Chromatic](https://www.chromatic.com/)'s
 visual-regression testing — specifically its ability to catch minor, easy-to-miss visual
 changes in SVG-based components, including ones introduced by LLM-generated edits.

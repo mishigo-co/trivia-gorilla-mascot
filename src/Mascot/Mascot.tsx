@@ -8,7 +8,11 @@ type Props = {
   variant?: SwatchName;
 };
 
-export function Mascot({ expression, size = 240, variant = "blue" }: Props) {
+export function Mascot({
+  expression,
+  size = 240,
+  variant = "blue",
+}: Readonly<Props>) {
   const swatch = swatches[variant];
   const face = expressionPaths(expression);
   return (
@@ -17,6 +21,8 @@ export function Mascot({ expression, size = 240, variant = "blue" }: Props) {
       width={size}
       height={size}
       xmlns="http://www.w3.org/2000/svg"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       {/* Base paths */}
       <path d={basePaths.face} fill={swatch.light} />
@@ -38,7 +44,16 @@ export function Mascot({ expression, size = 240, variant = "blue" }: Props) {
         if (o.tag === "circle")
           return <circle key={i} cx={o.cx} cy={o.cy} r={o.r} {...paint} />;
         if (o.tag === "ellipse")
-          return <ellipse key={i} cx={o.cx} cy={o.cy} rx={o.rx} ry={o.ry} {...paint} />;
+          return (
+            <ellipse
+              key={i}
+              cx={o.cx}
+              cy={o.cy}
+              rx={o.rx}
+              ry={o.ry}
+              {...paint}
+            />
+          );
         return <path key={i} d={o.d} {...paint} />;
       })}
     </svg>

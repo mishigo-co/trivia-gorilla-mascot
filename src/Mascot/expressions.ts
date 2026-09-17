@@ -16,8 +16,6 @@ export const expressions = {
     { tag: "circle", color: "dark", cx: 533, cy: 514, r: 13 },
     { tag: "circle", color: "light", cx: 459, cy: 509, r: 4 },
     { tag: "circle", color: "light", cx: 538, cy: 509, r: 4 },
-    { tag: "circle", color: "accent", cx: 412, cy: 645, r: 15 },
-    { tag: "circle", color: "accent", cx: 571, cy: 645, r: 15 },
     { tag: "path", color: "dark", stroke: 8, d: "M 450 650 Q 491 705 532 650" },
   ],
   sad: [
@@ -27,11 +25,9 @@ export const expressions = {
     { tag: "path", color: "accent", d: "M 432 552 Q 422 572 432 590 Q 442 572 432 552 Z" },
   ],
   angry: [
-    // narrowed eyes with angled brows
+    // narrowed eyes
     { tag: "ellipse", color: "dark", cx: 454, cy: 516, rx: 12, ry: 5 },
     { tag: "ellipse", color: "dark", cx: 533, cy: 516, rx: 12, ry: 5 },
-    { tag: "path", color: "dark", stroke: 9, d: "M 434 494 L 472 508" },
-    { tag: "path", color: "dark", stroke: 9, d: "M 553 494 L 515 508" },
     // snarling mouth with bared teeth
     { tag: "path", color: "dark", d: "M 440 655 Q 491 640 542 655 L 536 690 Q 491 705 446 690 Z" },
     { tag: "path", color: "light", d: "M 452 658 L 460 678 L 468 658 Z" },
